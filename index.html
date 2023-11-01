@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NeighbourGood</title>
+    <style>
+      
+      @keyframes spin-slow {
+          0% {
+              transform: rotate(0);
+          }
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+
+      .animate-spin-slow {
+          animation: spin-slow 5s linear infinite; /* Adjust the animation-duration to slow down or speed up the spin */
+      }
+</style>
+</head>
+<body>
+  <div class="bg-cover bg-center py-2 relative" style="background-image: url('images/bg_image_half_trans.png');">
+    <!-- header -->
+    <header class="text-gray-600 body-font">
+  <div class="container w-[1080px] mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path> -->
+      <!-- </svg> -->
+      <img src="images/new.png" alt="Logo" class="w-16 h-auto">
+      <span class="ml-3 text-xl font-black">NeighbourGood</span>
+    </a>
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+      <a href="#" class="mr-5 font-bold text-black hover:text-blue-600 hover:underline">Home</a>
+      <a href="#"class="mr-5 font-bold text-black hover:text-blue-600 hover:underline">Second Link</a>
+      <a href="#"class="mr-5 font-bold text-black hover:text-blue-600 hover:underline">Third Link</a>
+      <a href="#"class="mr-5 font-bold text-black hover:text-blue-600 hover:underline">Fourth Link</a>
+    </nav>
+    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+    <!-- hero section -->
+    <section class="text-gray-600 body-font">
+  <div class="container w-[1080px] mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900"> Dont Know Your Neighbours Yet?
+        <br>
+        <span class="hidden lg:inline-block role"></span>
+      </h1>
+      <p class="mb-8 leading-relaxed text-black font-medium">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-contain animate-spin-slow" alt="hero" src="images/logo.png" width="400" height="200">
+    </div>
+  </div>
+</section>
+<hr>
+<!-- feature -->
+<section class="text-gray-600 body-font">
+  <div class="container w-[1080px] px-5 py-24 mx-auto">
+    <div class="text-center mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Raw Denim Heirloom Man Braid</h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+      <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg>
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Shooting Stars</h2>
+          <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+          <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg>
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">The Catalyzer</h2>
+          <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+          <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Neptune</h2>
+          <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+          <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+  </div>
+</section>
+<!-- </div> -->
+<hr>
+<!-- Contact-Form -->
+<!-- <div class="bg-gradient-to-r from-rose-100 to-teal-100"> -->
+<div class="flex justify-center pb-8">
+  <div class="flex md:flex-row flex-col justify-center max-w-7xl m-4">
+      <div class="lg:w-1/2 bg-black ">
+          <div class="flex justify-center flex-col items-center">
+              <div class="text-white m-6 text-xl z-200"> Contact Us </div>
+              <div class="text-white m-6 z-200"> We are always here to help out whatever way we can :) </div>
+              <div class="text-white m-6 z-200">
+                  <div class="flex m-2">
+                      <ion-icon name="person-outline" class="m-2"></ion-icon> <input placeholder="Name"
+                          class="bg-gray-800 p-2 rounded-3xl">
+                  </div>
+                  <div class="flex m-2">
+                      <ion-icon name="mail-outline" class="m-2"></ion-icon> <input placeholder="E-mail"
+                          class="bg-gray-800 p-2 rounded-3xl">
+                  </div>
+                  <div class="flex m-2">
+                      <ion-icon name="call-outline" class="m-2"></ion-icon> <input placeholder="Phone"
+                          class="bg-gray-800 p-2 rounded-3xl">
+                  </div>
+                  <div class="flex m-2">
+                      <ion-icon name="create-outline" class="m-2"></ion-icon> <input
+                          placeholder="Type your message" class="bg-gray-800 p-2 rounded-3xl">
+                  </div>
+                  <div class="block m-2justify-center">
+                      <div class="bg-blue-700 p-2 rounded-3xl hover:bg-blue-800 cursor-pointer ">
+                          <div class="flex justify-center"> Send </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="w-3/4 lg:w-2/3 ">
+          <div class="w-3/4 lg:w-1/2 overflow-contain h-min"> <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.315540303!2d-74.26054823358196!3d40.697147766721685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1656264173526!5m2!1sen!2sin"
+                  width="375" height="667" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+      </div>
+  </div>
+  </div>
+</div>
+<!-- Footer -->
+  <div class="bg-gray-700 p-3 space-y-10 md:grid grid-cols-2 md:-mt-6 lg:grid-cols-4">
+      <div class="w-1/2 md:ml-24 md:mt-9 md:w-3/4">
+          <h1 class="text-orange-400 text-xl font-medium">Company</h1> <br />
+          <p class="text-gray-300/80 text-base hover:text-yellow-300 cursor-none"> A123 Lost Street <br /> Kolkata,
+              WB 700086 <br /> India </p> <br />
+          <p class="text-gray-200/80 text-base hover:text-yellow-300 cursor-pointer"> <strong
+                  class="tracking-wide text-orange-400 font-normal">Phone:</strong> +91 700XXXXXXX </p>
+          <p class="text-gray-200/80 text-base hover:text-yellow-300 cursor-pointer"> <strong
+                  class="tracking-wide text-orange-400 font-normal">Email:</strong> XYZ@gmail.com </p>
+      </div>
+      <div class="leading-9 md:w-2/4 md:order-3 md:ml-24">
+          <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Useful Links </h1>
+          <ul class="mt-2 text-gray-300/80">
+              <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                      Home</a> </li>
+              <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                      About Us</a> </li>
+              <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                      Services</a> </li>
+              <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                      Terms of service</a> </li>
+              <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                      Privacy policy</a> </li>
+          </ul>
+      </div>
+      <!-- <div class="leading-9 md:w-3/4 md:order-4">
+          <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Our Services </h1>
+          <ul class="mt-2 text-gray-300/80">
+              <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300"> Web
+                      Design</a> </li>
+              <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300"> Web
+                      Development</a> </li>
+              <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                      Product Management</a> </li>
+              <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                      Marketing</a> </li>
+              <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                      Graphic Design</a> </li>
+          </ul>
+      </div> -->
+      <div class="md:order-2 lg:order-last">
+          <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Join Our Newsletter </h1> <br />
+          <p class="text-gray-300/80 w-3/5 leading-7 mb-5 md:w-3/4"> Join 25,000+ others and never miss out on new
+              tips,tutorials, and more. </p> <input type="email" placeholder="Enter E-mail Here"
+              class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus: outline-none focus:border border-orange-600 md:w-1/2 lg:w-3/5" />
+          <button class="text-white bg-orange-400 p-1 -translate-x-1 rounded-br-xl hover:bg-orange-500"> Subscribe
+          </button>
+      </div>
+  </div>
+  <div class="bg-gray-900 p-3 flex flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0">
+      <div
+          class="flex mx-3 justify-between space-x-20 md:flex-row text-gray-200 md:space-x-28 md:ml-20 lg:ml-24 lg:space-x-[13rem] xl:space-x-72 xl:ml-24">
+          <p>@ Copyright <strong>Company.</strong>All Rights Reserved</p>
+          <p>Designed by <span class="text-orange-400">Avipsha</span></p>
+      </div>
+      <div
+          class="text-white pb-4 text-center text-xl space-x-2 md:w-2/4 md:pb-0 md:pl-2 md:space-x-1 lg:pl-[171px] lg:space-x-2 xl:pl-44">
+          <a href="#"
+              class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                  class="fa fa-twitter"></i></a> <a href="#"
+              class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                  class="fa fa-instagram"></i></a> <a href="#"
+              class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                  class="fa fa-facebook"></i></a> <a href="#"
+              class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                  class="fa fa-google"></i></a> <a href="#"
+              class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                  class="fa fa-linkedin"></i></a> </div>
+  </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+<script>
+  var typeData = new Typed(".role", {
+    strings: [
+      "Well! Know them now...."
+    ],
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 1000,
+  });
+</script>
+</body>
+</html>
